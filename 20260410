@@ -1,0 +1,11 @@
+#include <string>
+#include <vector>
+
+using namespace std;
+
+string solution(string phone_number) {
+    string answer = "";
+    int masking = phone_number.length() - 4;
+    answer = phone_number.replace(0, masking, string(masking,'*'));
+    return answer;
+}
